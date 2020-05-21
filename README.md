@@ -17,7 +17,7 @@ Returns the longest repeated substring using TDD
 
 #### For each character element in the input string
 1. create a substring from a tracked starting position to the current character
-2. confirm substring has multiple occurrences
+2. confirm substring has multiple occurrences, after beginning of first
 3. If #2 true, set current substring as longest(if it is)
 4. If #2 false, increment start position, re-initialize current
 

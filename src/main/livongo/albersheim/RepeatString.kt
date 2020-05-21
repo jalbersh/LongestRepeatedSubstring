@@ -6,16 +6,17 @@ public class RepeatString : RepeatStringInterface {
          if (input.isEmpty() || sub.isEmpty()) return false
          if (input.contains(sub)) {
              val starts = input.indexOf(sub) // get index of first occurrence
-             if (input.substring(starts+1).contains(sub)) return true // confirm 2nd occurrence
+             if (input.substring(starts+1).contains(sub)) return true // confirm 2nd occurrence after beginning of first
          }
          return false
      }
 
      // returns the longest repeated substring
      // assumptions - 1. substrings are matched assuming same case
-     //               2. substrings are longer than 1 character long
+     //               2. substrings are longer than 1 character
+     //               3. empty input or empty substring returns no repeat
      override fun findLongestRepeatingSubstring(input: String): String {
-         if (input.isEmpty()) return "";
+        if (input.isEmpty()) return "";
         var current = input.substring(0,1) // initialize to first letter
         var longest = input.substring(0,1) // initialize to first letter
 
