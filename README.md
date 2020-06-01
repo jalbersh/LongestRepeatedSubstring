@@ -34,3 +34,10 @@ Returns the longest repeated substring using TDD
    - using internal String methods is probably faster 
    - future enhancement: can reduce loop to look only up to input-length(substring)
    - performance degrades with large strings
+ 
+#### Testing
+ 
+1. to build: ```gradlew clean assemble```
+2. to run: 
+   ```kotlin -classpath build/libs/LongestRepeatedSubstring.jar longestRepeatedString.AppKt <input string>```, where the input string is the string to be searched for repeats
+3. to run tests: ```gradlew test``` or in IntelliJ, Crtl-Shift-R on test folder
