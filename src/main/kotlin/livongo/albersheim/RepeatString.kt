@@ -1,6 +1,6 @@
-package main.livongo.albersheim
+package livongo.albersheim
 
-public class RepeatString : RepeatStringInterface {
+class RepeatString : RepeatStringInterface {
     // returns true if there are multiple occurrences of substring in string
     override fun containsMultiples(sub: String, input: String): Boolean {
          if (input.isEmpty() || sub.isEmpty()) return false
@@ -20,7 +20,6 @@ public class RepeatString : RepeatStringInterface {
         var current = input.substring(0,1) // initialize to first letter
         var longest = input.substring(0,1) // initialize to first letter
 
-        var start=0;
         // for each character element in the input string
         for (element in input.substring(1)) {
             val c = element
@@ -32,7 +31,7 @@ public class RepeatString : RepeatStringInterface {
                 }
             }
             else { // if current substring does not have multiples, increment start, re-initialize current
-                start = input.indexOf(c);
+//                start = input.indexOf(c);
                 current = "".plus(c)
             }
         }

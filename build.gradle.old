@@ -10,7 +10,7 @@ buildscript {
 
 apply plugin: 'kotlin'
 
-group 'albersheim'
+group 'livongo.albersheim'
 version '1.0-SNAPSHOT'
 
 repositories {

@@ -1,7 +1,5 @@
-package test.livongo.albersheim
+package livongo.albersheim
 
-import main.livongo.albersheim.RepeatString
-import main.livongo.albersheim.RepeatStringInterface
 import org.junit.Test
 import org.junit.Assert.assertEquals
 
